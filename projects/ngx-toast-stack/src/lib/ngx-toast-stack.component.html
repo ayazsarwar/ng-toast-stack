@@ -1,0 +1,33 @@
+<div class="ngx-toast-stack-container" [style]="ns.toastsBag.length == 0 ? 'display:none' : ''">
+  <div class="ngx-toast-stack-list" [@listAnimation]="ns.toastsBag.length">
+    <div class="ngx-toast-stack" *ngFor="let toast of ns.toastsBag.reverse()" (click)="ns.pop(toast.id)"
+      (mouseover)="toast.timerRef?.pause()" (mouseout)="toast.timerRef?.resume()">
+      <div class="ngx-toast-stack-content-container-outer">
+        <div class="ngx-toast-stack-content-container-inner">
+          <div class="ngx-toast-stack-icon" *ngIf="toast.icon">
+            <app-svg-icon [type]="toast.type"></app-svg-icon>
+          </div>
+
+          <div class="ngx-toast-stack-content" [ngStyle]="{'margin-left': toast.icon?'12px':''}">
+            <h5 class="ngx-toast-stack-title">
+              {{ toast?.title }}
+            </h5>
+            <p class="ngx-toast-stack-message">
+              {{ toast.msg }}
+            </p>
+          </div>
+          <div class="ngx-toast-stack-icon-close">
+            <svg class="ngx-toast-stack-icon-close-size" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="toast.autoClose" class="ngx-toast-stack-timer">
+        <div class="ngx-toast-stack-timer-bar" [ngStyle]="{'width': (toast.timerRef.remainingPercentage)+'%'}">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

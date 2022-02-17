@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { NgxToastStackComponent } from './ngx-toast-stack.component';
+import { SvgIconComponent } from './svg-icon.component';
 
-describe('NgxToastStackComponent', () => {
-  let component: NgxToastStackComponent;
-  let fixture: ComponentFixture<NgxToastStackComponent>;
+describe('SvgIconComponent', () => {
+  let component: SvgIconComponent;
+  let fixture: ComponentFixture<SvgIconComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [NgxToastStackComponent]
+      declarations: [ SvgIconComponent ]
     })
-      .compileComponents();
+    .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgxToastStackComponent);
+    fixture = TestBed.createComponent(SvgIconComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

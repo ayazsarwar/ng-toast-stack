@@ -1,0 +1,44 @@
+svg {
+    width : 100%;
+    height: 100%;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  
+  svg.ngx-svg-icon-animate path {
+    animation: dash 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation-delay: 0.25s;
+  }
+  
+  @keyframes dash {
+    0% { stroke-dashoffset: 210; }
+    75% { stroke-dashoffset: -220; }
+    100% { stroke-dashoffset: -205; }
+  }
+  
+.ngx-svg-icon-container {
+  position: relative;
+  width: 100%;
+  height:100%;
+}
+
+.ngx-svg-icon-error {
+  width:100%;
+  height:100%;
+  color: rgb(220 38 38);
+}
+
+.ngx-svg-icon-animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
