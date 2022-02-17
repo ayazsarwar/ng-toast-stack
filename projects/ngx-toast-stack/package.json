@@ -10,6 +10,7 @@
   "bugs": {
     "url": "https://github.com/ayazsarwar/ngx-toast-stack/issues"
   },
+  "public": true,
   "homepage": "https://github.com/ayazsarwar/ngx-toast-stack",
   "license": "MIT",
   "keywords": [
@@ -28,9 +29,7 @@
   ],
   "peerDependencies": {
     "@angular/common": "^10.*.*",
-    "@angular/core": "^10.*.*"
-  },
-  "dependencies": {
+    "@angular/core": "^10.*.*",
     "tslib": "^1.*.*"
   }
 }
