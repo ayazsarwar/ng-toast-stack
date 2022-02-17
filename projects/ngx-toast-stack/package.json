@@ -1,6 +1,31 @@
 {
   "name": "ngx-toast-stack",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "Beautiful & easy to use toast stack messages, having auto close, pause, resume functionality and customization.",
+  "author": "Ayaz Sarwar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ayazsarwar/ngx-toast-stack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ayazsarwar/ngx-toast-stack/issues"
+  },
+  "homepage": "https://github.com/ayazsarwar/ngx-toast-stack",
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "javascript",
+    "typescript",
+    "notification",
+    "toast",
+    "snackbar",
+    "toast stack",
+    "snackbar stack",
+    "notification stack",
+    "toast queue",
+    "snackbard queue",
+    "notification queue"
+  ],
   "peerDependencies": {
     "@angular/common": "^13.2.0",
     "@angular/core": "^13.2.0"
