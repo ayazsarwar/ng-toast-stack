@@ -1,10 +1,10 @@
 # NgxToastStack
 
-Beautiful toast messaeges which can be stacked.
+Beautiful & easy to use toast stack messages, having auto close, pause, resume functionality and customization.
 
 # Installation
 ```
-    ng add ngx-toast-stack
+    ng add @ayazsarwar/ngx-toast-stack
 ```
 
 # Documentation
