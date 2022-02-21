@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { NgxToastStackComponent } from './ngx-toast-stack.component';
+import { NgToastStackComponent } from './ng-toast-stack.component';
 
-describe('NgxToastStackComponent', () => {
-  let component: NgxToastStackComponent;
-  let fixture: ComponentFixture<NgxToastStackComponent>;
+describe('NgToastStackComponent', () => {
+  let component: NgToastStackComponent;
+  let fixture: ComponentFixture<NgToastStackComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [NgxToastStackComponent]
+      declarations: [NgToastStackComponent]
     })
       .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgxToastStackComponent);
+    fixture = TestBed.createComponent(NgToastStackComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

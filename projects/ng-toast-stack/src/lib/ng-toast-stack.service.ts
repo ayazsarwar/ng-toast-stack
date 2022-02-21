@@ -3,16 +3,16 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class NgxToastStackService {
+export class NgToastStackService {
   id: number = 0;
-  toastsBag: Array<NgxToastStackType> = []
+  toastsBag: Array<NgToastStackType> = []
 
   constructor() { }
 
-  push(data: NgxToastStackType | string) {
-    if (typeof data === 'string') data = <NgxToastStackType>{ msg: data }
+  push(data: NgToastStackType | string) {
+    if (typeof data === 'string') data = <NgToastStackType>{ msg: data }
     data.id = ++this.id;
-    const toast = new NgxToastStack(data)
+    const toast = new NgToastStack(data)
     this.toastsBag.push(toast);
 
     if (toast.autoClose) {
@@ -33,27 +33,27 @@ export class NgxToastStackService {
 
   // Sugared methods
 
-  pushStatic(data: NgxToastStackType | string) {
+  pushStatic(data: NgToastStackType | string) {
     if (typeof data === 'string') {
-      data = <NgxToastStackType>{ msg: data, autoClose: false }
+      data = <NgToastStackType>{ msg: data, autoClose: false }
       this.push(data)
     } else {
       this.push({ ...data, autoClose: false })
     }
   }
 
-  success(data: NgxToastStackType | string) {
+  success(data: NgToastStackType | string) {
     if (typeof data === 'string') {
-      data = <NgxToastStackType>{ msg: data, type: 'success' }
+      data = <NgToastStackType>{ msg: data, type: 'success' }
       this.push(data)
     } else {
       this.push({ ...data, type: 'success' })
     }
   }
 
-  error(data: NgxToastStackType | string) {
+  error(data: NgToastStackType | string) {
     if (typeof data === 'string') {
-      data = <NgxToastStackType>{ msg: data, type: 'error' }
+      data = <NgToastStackType>{ msg: data, type: 'error' }
       this.push(data)
     } else {
       this.push({ ...data, type: 'error' })
@@ -62,7 +62,7 @@ export class NgxToastStackService {
 
 }
 
-export interface NgxToastStackType {
+export interface NgToastStackType {
   id?: number;
   type?: string;
   title?: string;
@@ -74,7 +74,7 @@ export interface NgxToastStackType {
   icon?: string | boolean
 }
 
-export class NgxToastStack {
+export class NgToastStack {
   id: number
   type: string
   title: string
@@ -84,7 +84,7 @@ export class NgxToastStack {
   timerRef?: any
   icon?: string | boolean
 
-  constructor(data: NgxToastStackType) {
+  constructor(data: NgToastStackType) {
     this.id = data.id || 5000
     this.type = data.type || 'success'
     this.title = this.getTitle(data)
@@ -94,7 +94,7 @@ export class NgxToastStack {
     this.icon = (data.hasOwnProperty('icon') && data.icon !== undefined) ? data.icon : true
   }
 
-  getTitle(data: NgxToastStackType) {
+  getTitle(data: NgToastStackType) {
     if (!data.title && data.type == 'error') return 'Error';
     if (!data.title && (!data.type || data.type == 'success')) return 'Success';
     return data.title || 'Message';

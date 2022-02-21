@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-toast-stack": {
+    "ng-toast-stack": {
       "projectType": "library",
-      "root": "projects/ngx-toast-stack",
-      "sourceRoot": "projects/ngx-toast-stack/src",
+      "root": "projects/ng-toast-stack",
+      "sourceRoot": "projects/ng-toast-stack/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ngx-toast-stack/ng-package.json"
+            "project": "projects/ng-toast-stack/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-toast-stack/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ng-toast-stack/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/ngx-toast-stack/tsconfig.lib.json"
+              "tsConfig": "projects/ng-toast-stack/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,13 +27,13 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-toast-stack/src/test.ts",
-            "tsConfig": "projects/ngx-toast-stack/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-toast-stack/karma.conf.js"
+            "main": "projects/ng-toast-stack/src/test.ts",
+            "tsConfig": "projects/ng-toast-stack/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-toast-stack/karma.conf.js"
           }
         }
       }
     }
   },
-  "defaultProject": "ngx-toast-stack"
+  "defaultProject": "ng-toast-stack"
 }

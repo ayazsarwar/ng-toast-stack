@@ -12,9 +12,9 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
-      "ngx-toast-stack": [
-        "dist/ngx-toast-stack/ngx-toast-stack",
-        "dist/ngx-toast-stack"
+      "ng-toast-stack": [
+        "dist/ng-toast-stack/ng-toast-stack",
+        "dist/ng-toast-stack"
       ]
     },
     "declaration": false,

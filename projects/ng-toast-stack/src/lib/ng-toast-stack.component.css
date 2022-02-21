@@ -1,4 +1,4 @@
-.ngx-toast-stack {
+.ng-toast-stack {
     position: relative;
     margin-top: 1rem;
     overflow: hidden;
@@ -10,7 +10,7 @@
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.ngx-toast-stack-content-container-outer {
+.ng-toast-stack-content-container-outer {
     height: 100%;
     padding-left: 12px;
     padding-right: 6px;
@@ -20,24 +20,24 @@
     border-radius: 8px;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
-.ngx-toast-stack-content-container-inner {
+.ng-toast-stack-content-container-inner {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-shrink: 0;
 }
 
-.ngx-toast-stack-content {
+.ng-toast-stack-content {
     width: 100%;
 }
-.ngx-toast-stack-title {
+.ng-toast-stack-title {
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
     margin: 0;
     color: rgb(31 41 55);
 }
-.ngx-toast-stack-message {
+.ng-toast-stack-message {
     height: 100%;
     overflow-y: auto;
     color: rgb(75 85 99);
@@ -46,7 +46,7 @@
     max-height: 384px;
     margin: 0;
 }
-.ngx-toast-stack-icon-close {
+.ng-toast-stack-icon-close {
     display: flex;
     color: rgb(209 213 219);
     align-items: center;
@@ -57,35 +57,35 @@
     transition-duration: 200ms;
 }
 
-.ngx-toast-stack-content-container-outer:hover .ngx-toast-stack-icon-close{
+.ng-toast-stack-content-container-outer:hover .ng-toast-stack-icon-close{
     color: rgb(107 114 128);
 }
-.ngx-toast-stack-icon{
+.ng-toast-stack-icon{
     width: 40px;
     height: 40px;
 }
-.ngx-toast-stack-icon-close-size {
+.ng-toast-stack-icon-close-size {
     width: 1.5rem;
     height:1.5rem
 }
-.ngx-toast-stack-timer {
+.ng-toast-stack-timer {
     position:absolute;
     bottom: 0;
     width: 100%;
     height: 0.25rem;
     background-color: rgb(229 231 235 / 0.75);
 }
-.ngx-toast-stack-timer-bar {
+.ng-toast-stack-timer-bar {
     height: 4px;
     background-color: rgb(209 213 219);
 }
-.ngx-toast-stack-list {
+.ng-toast-stack-list {
     width: 100%;
     max-width: 24rem;
     z-index: 1000;
 }
 
-.ngx-toast-stack-container {
+.ng-toast-stack-container {
     position:fixed;
     top: 0px;
     right: 0px;
@@ -103,7 +103,7 @@
 }
 
 @media (min-width: 640px) {
-    .ngx-toast-stack-container {
+    .ng-toast-stack-container {
         padding: 24px;
     }
 }

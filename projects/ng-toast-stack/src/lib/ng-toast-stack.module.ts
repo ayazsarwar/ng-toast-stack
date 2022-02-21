@@ -1,21 +1,21 @@
 import { CommonModule } from '@angular/common';
 
 import { NgModule } from '@angular/core';
-import { NgxToastStackComponent } from './ngx-toast-stack.component';
+import { NgToastStackComponent } from './ng-toast-stack.component';
 import { SvgIconComponent } from './svg-icon/svg-icon.component';
 
 
 
 @NgModule({
   declarations: [
-    NgxToastStackComponent,
+    NgToastStackComponent,
     SvgIconComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    NgxToastStackComponent
+    NgToastStackComponent
   ]
 })
-export class NgxToastStackModule { }
+export class NgToastStackModule { }

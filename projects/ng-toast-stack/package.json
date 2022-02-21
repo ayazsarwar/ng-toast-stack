@@ -1,17 +1,17 @@
 {
-  "name": "@ayazsarwar/ngx-toast-stack",
+  "name": "ng-toast-stack",
   "version": "1.0.0",
   "description": "Beautiful & easy to use toast stack messages, having auto close, pause, resume functionality and customization.",
   "author": "Ayaz Sarwar",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ayazsarwar/ngx-toast-stack.git"
+    "url": "https://github.com/ayazsarwar/ng-toast-stack.git"
   },
   "bugs": {
-    "url": "https://github.com/ayazsarwar/ngx-toast-stack/issues"
+    "url": "https://github.com/ayazsarwar/ng-toast-stack/issues"
   },
   "public": true,
-  "homepage": "https://github.com/ayazsarwar/ngx-toast-stack",
+  "homepage": "https://github.com/ayazsarwar/ng-toast-stack",
   "license": "MIT",
   "keywords": [
     "angular",
@@ -29,6 +29,7 @@
   ],
   "peerDependencies": {
     "@angular/common": "^10.*.*",
-    "@angular/core": "^10.*.*"
+    "@angular/core": "^10.*.*",
+    "tsLib": "^1.*.*"
   }
 }

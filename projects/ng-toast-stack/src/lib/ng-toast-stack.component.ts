@@ -7,7 +7,7 @@ import {
   stagger,
 } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
-import { NgxToastStackService } from './ngx-toast-stack.service';
+import { NgToastStackService } from './ng-toast-stack.service';
 
 const listAnimation = trigger('listAnimation', [
   transition('* <=> *', [
@@ -39,13 +39,13 @@ const listAnimation = trigger('listAnimation', [
 ]);
 
 @Component({
-  selector: 'ngx-toast-stack',
-  templateUrl: './ngx-toast-stack.component.html',
-  styleUrls: ['./ngx-toast-stack.component.css'],
+  selector: 'ng-toast-stack',
+  templateUrl: './ng-toast-stack.component.html',
+  styleUrls: ['./ng-toast-stack.component.css'],
   animations: [listAnimation],
 })
-export class NgxToastStackComponent implements OnInit {
-  constructor(public ns: NgxToastStackService) { }
+export class NgToastStackComponent implements OnInit {
+  constructor(public ns: NgToastStackService) { }
 
   ngOnInit(): void { }
 }
