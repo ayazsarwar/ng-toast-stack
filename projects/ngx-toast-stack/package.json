@@ -29,7 +29,6 @@
   ],
   "peerDependencies": {
     "@angular/common": "^10.*.*",
-    "@angular/core": "^10.*.*",
-    "tslib": "^1.*.*"
+    "@angular/core": "^10.*.*"
   }
 }
