@@ -71,7 +71,8 @@ export interface NgToastStackType {
   autoCloseTimer?: number;
   timerRef?: any;
   timerWidth?: any;
-  icon?: string | boolean
+  icon?: string | boolean;
+  pauseOnHover?: boolean;
 }
 
 export class NgToastStack {
@@ -83,6 +84,7 @@ export class NgToastStack {
   autoCloseTimer: number
   timerRef?: any
   icon?: string | boolean
+  pauseOnHover?: boolean
 
   constructor(data: NgToastStackType) {
     this.id = data.id || 5000
@@ -92,6 +94,7 @@ export class NgToastStack {
     this.autoClose = (data.hasOwnProperty('autoClose') && data.autoClose !== undefined) ? data.autoClose : true
     this.autoCloseTimer = data.autoCloseTimer || 5000
     this.icon = (data.hasOwnProperty('icon') && data.icon !== undefined) ? data.icon : true
+    this.pauseOnHover = (data.hasOwnProperty('pauseOnHover') && data.pauseOnHover !== undefined) ? data.pauseOnHover : true
   }
 
   getTitle(data: NgToastStackType) {

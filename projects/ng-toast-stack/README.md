@@ -3,7 +3,7 @@
 
 An Angular module for **beautiful & easy to use toast stack messages**, having auto close, pause, resume functionality and complete customization ability...
 
-![demo](https://user-images.githubusercontent.com/87582043/155489500-fb763beb-c780-4aa9-9fa0-21db07c91510.gif)
+![demo](https://github.com/ayazsarwar/ng-toast-stack/blob/master/demo.gif?raw=true)
 
 
 

@@ -1,7 +1,8 @@
 <div class="ng-toast-stack-container" [style]="ns.toastsBag.length == 0 ? 'display:none' : ''">
   <div class="ng-toast-stack-list" [@listAnimation]="ns.toastsBag.length">
     <div class="ng-toast-stack" *ngFor="let toast of ns.toastsBag.reverse()" (click)="ns.pop(toast.id)"
-      (mouseover)="toast.timerRef?.pause()" (mouseout)="toast.timerRef?.resume()">
+      (mouseover)="toast.pauseOnHover? toast.timerRef?.pause():''"
+      (mouseout)="toast.pauseOnHover? toast.timerRef?.resume():''">
       <div class="ng-toast-stack-content-container-outer">
         <div class="ng-toast-stack-content-container-inner">
           <div class="ng-toast-stack-icon" *ngIf="toast.icon">
