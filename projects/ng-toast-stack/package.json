@@ -1,6 +1,6 @@
 {
   "name": "ng-toast-stack",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Beautiful & easy to use toast stack messages, having auto close, pause, resume functionality and customization.",
   "author": "Ayaz Sarwar",
   "repository": {
@@ -25,7 +25,10 @@
     "notification stack",
     "toast queue",
     "snackbar queue",
-    "notification queue"
+    "notification queue",
+    "toast messages",
+    "snackbar messages",
+    "notification messages"
   ],
   "peerDependencies": {
     "@angular/common": ">=10",
