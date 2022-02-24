@@ -33,7 +33,7 @@ export class NgToastStackService {
 
   // Sugared methods
 
-  pushStatic(data: NgToastStackType | string) {
+  static(data: NgToastStackType | string) {
     if (typeof data === 'string') {
       data = <NgToastStackType>{ msg: data, autoClose: false }
       this.push(data)
